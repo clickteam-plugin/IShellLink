@@ -1,0 +1,370 @@
+/*
+ * Copyright 2014 Olivier WENGER
+ *     http://www.magicspark.org/ or http://oulydev.free.fr/
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\..\inc\ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#ifndef _DEBUG
+#define _EXT_FILEFLAGS_DEBUG (0)
+#else
+#define _EXT_FILEFLAGS_DEBUG (VS_FF_DEBUG)
+#endif
+#define EXT_FILEFLAGS (_EXT_FILEFLAGS_DEBUG)
+
+1 VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x0L
+ FILEFLAGS EXT_FILEFLAGS
+ FILEOS 0x10001L
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+#ifndef RUN_ONLY
+            VALUE "Comments", "MMF's edittime version\0"
+#endif
+            VALUE "CompanyName", "MagicSpark.org\0"
+#ifndef RUN_ONLY
+            VALUE "FileDescription", "IShellLink interface.\0"
+#else
+            VALUE "FileDescription", "\0"
+#endif
+            VALUE "FileVersion", "1.0.0\0"
+            VALUE "InternalName", "IShellLink\0"
+            VALUE "LegalCopyright", "Copyright © 2014 Olivier WENGER\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ishelllink.mfx\0"
+#if EXT_FILEFLAGS & VS_FF_PRIVATEBUILD
+            VALUE "PrivateBuild", "Private build\0"
+#endif
+            VALUE "ProductName", "IShellLink\0"
+            VALUE "ProductVersion", "1.0.0\0"
+#if EXT_FILEFLAGS & VS_FF_SPECIALBUILD
+            VALUE "SpecialBuild", "Special build\0"
+#endif
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+KPX_MAGICNUMBER RCDATA MOVEABLE PURE 
+BEGIN
+    0x2516, 0x5908
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP  MOVEABLE PURE   "RES\\EXT_ICON_IMG.BMP"
+#else
+EXO_ICON                BITMAP  MOVEABLE PURE   "RES\\EXT_ICON_IMG.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP  MOVEABLE PURE   "RES\\EXT_ICON_IMG.BMP"
+#else
+EXO_IMAGE               BITMAP  MOVEABLE PURE   "RES\\EXT_ICON_IMG.BMP"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_ACTIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_ACTIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "File"
+        BEGIN
+            MENUITEM "Load", ACT_IDMN_LOAD
+            MENUITEM "Save to", ACT_IDMN_SAVETO
+        END
+        POPUP "Content"
+        BEGIN
+            MENUITEM "Set path", ACT_IDMN_SETPATH
+            MENUITEM "Set arguments", ACT_IDMN_SETARGS
+            MENUITEM "Set show cmd", ACT_IDMN_SETSHOWCMD
+            MENUITEM "Set working directory", ACT_IDMN_SETWORKINGDIRECTORY
+            MENUITEM SEPARATOR
+            MENUITEM "Set relative path", ACT_IDMN_SETRELATIVEPATH
+            MENUITEM "Resolve path", ACT_IDMN_RESOLVE
+            MENUITEM SEPARATOR
+            MENUITEM "Set icon location", ACT_IDMN_SETICONLOCATION
+            MENUITEM "Set description", ACT_IDMN_SETDESCRIPTION
+            MENUITEM SEPARATOR
+            MENUITEM "Set hot key", ACT_IDMN_SETHOTKEY
+        END
+        MENUITEM "Clear last HRESULT code", ACT_IDMN_CLEARLASTERRORCODE
+        MENUITEM SEPARATOR
+        MENUITEM "Reset", ACT_IDMN_RESET
+        MENUITEM SEPARATOR /* Separator with MMF default menu items */
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_CONDITIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_CONDITIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "File"
+        BEGIN
+            MENUITEM "Is dirty? (needs to be saved)", CND_IDMN_ISDIRTY
+        END
+        MENUITEM "On error", CND_IDMN_ONERROR
+        MENUITEM "On failure", CND_IDMN_ONFAILURE
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_EXPRESSIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Content"
+        BEGIN
+            MENUITEM "Get raw path", EXP_IDMN_GETRAWPATH
+            MENUITEM "Get arguments", EXP_IDMN_GETARGS
+            MENUITEM "Get working directory", EXP_IDMN_GETWORKINGDIRECTORY
+            MENUITEM "Get show cmd", EXP_IDMN_GETSHOWCMD
+            MENUITEM SEPARATOR
+            MENUITEM "Get icon location path", EXP_IDMN_GETICONLOCATIONPATH
+            MENUITEM "Get icon index", EXP_IDMN_GETICONLOCATIONINDEX
+            MENUITEM "Get description", EXP_IDMN_GETDESCRIPTION
+            MENUITEM SEPARATOR
+            MENUITEM "Get hot key", EXP_IDMN_GETHOTKEY
+        END
+        MENUITEM "Get last HRESULT code", EXP_IDMN_GETLASTERRORCODE
+        MENUITEM SEPARATOR /* Separator with MMF default menu items */
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""..\\..\\Inc\\ccx.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KPX_MARK                "MF2"
+    KPX_NAME                "IShellLink"
+END
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ACT_IDS_CLEARLASTERRORCODE              "%o Clear last error"
+
+    ACT_IDS_LOAD                            "%o load from file=%0"
+    ACT_IDP_LOAD_0                          "#Title#Select shell link to load#Filter#Shell link files (*.lnk)|*.lnk|All files (*.*)|*.*|"
+
+    ACT_IDS_SAVETO                          "%o save to file=%0"
+    ACT_IDP_SAVETO_0                        "#Title#Select file to save shell file in#Filter#Shell link files (*.lnk)|*.lnk|All files (*.*)|*.*|"
+
+    ACT_IDS_RESOLVE                         "%o resolve shell link"
+
+    ACT_IDS_SETARGS                         "%o set arguments, args=%0"
+    ACT_IDP_SETARGS_0                       "Shell link arguments"
+
+    ACT_IDS_SETDESCRIPTION                  "%o set description, desc=%0"
+    ACT_IDP_SETDESCRIPTION_0                "Shell link description"
+
+    ACT_IDS_SETHOTKEY                       "%o set hot key, hotkey=%0"
+    ACT_IDP_SETHOTKEY_0                     "Shell link hot key, see MSDN for details"
+
+    ACT_IDS_SETICONLOCATION                 "%o set icon location, file=%0, icon=%1"
+    ACT_IDP_SETICONLOCATION_0               "#Title#Select link icon location#Filter#All files (*.*)|*.*|"
+    ACT_IDP_SETICONLOCATION_1               "Index of icon to use"
+
+    ACT_IDS_SETPATH                         "%o set target, path=%0"
+    ACT_IDP_SETPATH_0                       "#Title#Select shell link's target file#Filter#All files (*.*)|*.*|"
+
+    ACT_IDS_SETRELATIVEPATH                 "%o set relative path, ref file=%0"
+    ACT_IDP_SETRELATIVEPATH_0               "#Title#Select reference file#Filter#All files (*.*)|*.*|"
+
+    ACT_IDS_SETSHOWCMD                      "%o set show cmd, cmd=%0"
+    ACT_IDP_SETSHOWCMD_0                    "Show window command, see MSDN for details"
+
+    ACT_IDS_SETWORKINGDIRECTORY             "%o set working directory, dir=%0"
+    ACT_IDP_SETWORKINGDIRECTORY_0           "Shell link target's initial working directory"
+
+    ACT_IDS_RESET                           "%o reset"
+END
+#endif /* RUN_ONLY */
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CND_IDS_ONFAILURE                       "%o on failure"
+    CND_IDS_ONERROR                         "%o on error"
+
+    CND_IDS_ISDIRTY                         "%o is dirty?"
+END
+#endif /* RUN_ONLY */
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EXP_IDS_GETLASTERRORCODE                "getLastHResultCode("
+
+    EXP_IDS_GETARGS                         "getArguments$("
+    EXP_IDS_GETDESCRIPTION                  "getDescription$("
+    EXP_IDS_GETHOTKEY                       "getHotKey("
+    EXP_IDS_GETICONLOCATIONPATH             "getIconLocationPath$("
+    EXP_IDS_GETICONLOCATIONINDEX            "getIconLocationIndex("
+    EXP_IDS_GETRAWPATH                      "getRawPath$("
+    EXP_IDS_GETSHOWCMD                      "getShowCmd("
+    EXP_IDS_GETWORKINGDIRECTORY             "getWorkingDirectory$("
+END
+#endif /* RUN_ONLY */
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    DB_IDS_LASTERRORCODE                    "Last HRESULT code: 0x%x"
+END
+#endif /* RUN_ONLY */
+
+#ifndef RUN_ONLY
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDST_OBJNAME            "IShellLink"
+    IDST_AUTHOR             "Olivier WENGER"
+    IDST_COPYRIGHT          "Copyright © 2014 Olivier WENGER"
+    IDST_COMMENT            "IShellLink interface allowing to create and resolve shell link (LNK file)."
+    IDST_HTTP               "http://www.magicspark.org/"
+END
+#endif /* RUN_ONLY */
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+/* END OF FILE */
